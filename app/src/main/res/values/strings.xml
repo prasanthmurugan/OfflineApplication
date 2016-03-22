@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OfflineApplication</string>
+    <string name="feed_name">Ravi shathiri</string>
+    <string name="feed_status">iam an developer from india</string>
+    <string name="data_cleared">Cache Data is cleared from the device.connect the network to view the application</string>
+    <string name="enable_net">Enable network</string>
+</resources>

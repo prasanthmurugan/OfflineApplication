@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/feed_image"-->
+        <!--android:layout_width="160dp"-->
+        <!--android:layout_height="100dp"-->
+        <!--fresco:placeholderImage="@drawable/sample_feed_image"-->
+        <!--fresco:actualImageScaleType="centerCrop"-->
+        <!--android:scaleType="centerCrop"/>-->
+
+    <ImageView
+        android:id="@+id/feed_image"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/feed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feed_name"
+        android:textSize="@dimen/font_20sp"
+        android:layout_toRightOf="@id/feed_image"
+        android:layout_toEndOf="@+id/feed_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/feed_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feed_status"
+        android:textSize="@dimen/font_16sp"
+        android:layout_toRightOf="@id/feed_image"
+        android:layout_toEndOf="@+id/feed_image"
+        android:layout_below="@+id/feed_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
